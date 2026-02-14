@@ -1,54 +1,58 @@
-💸 Rupiah-Check
+**💸 Rupiah-Check**
 
 Rupiah-Check adalah proyek Computer Vision berbasis Convolutional Neural Network (CNN) yang dibuat untuk mendeteksi uang kertas Rupiah dari gambar.
 
-🎯 Latar Belakang
+
+**🎯 Latar Belakang**
 
 Proyek ini dibuat karena seorang teman ingin mengembangkan software yang dapat:
 
-📷 Mendeteksi nominal uang Rupiah dari kamera/gambar.
+1. 📷 Mendeteksi nominal uang Rupiah dari kamera/gambar.
 
-🧑‍🎓 Setelah uang terdeteksi, sistem akan menjelaskan sejarah pahlawan nasional yang terdapat pada uang tersebut.
+2.🧑‍🎓 Setelah uang terdeteksi, sistem akan menjelaskan sejarah pahlawan nasional yang terdapat pada uang tersebut.
 
 Jadi proyek ini bukan sekadar klasifikasi gambar, tetapi menjadi bagian dari sistem edukatif berbasis AI.
 
-🧠 Teknologi yang Digunakan
 
-Deep Learning
+**🧠 Teknologi yang Digunakan**
 
-Convolutional Neural Network (CNN)
+1. Deep Learning
 
-Data Augmentation
+2. Convolutional Neural Network (CNN)
 
-Callback Optimization:
+3. Data Augmentation
 
-ReduceLROnPlateau
+4. Callback Optimization:
 
-EarlyStopping
+4.1 ReduceLROnPlateau
 
-Framework yang digunakan:
+4.2 EarlyStopping
 
-Python
+5. Framework yang digunakan:
 
-TensorFlow / Keras
+5.1 Python
 
-🏗 Cara Kerja Model
+5.2 TensorFlow / Keras
 
-Dataset gambar uang Rupiah dikumpulkan dan diproses.
 
-Data dibagi menjadi:
+**🏗 Cara Kerja Model**
 
-Training set
+1. Dataset gambar uang Rupiah dikumpulkan dan diproses.
 
-Validation set
+2. Data dibagi menjadi:
 
-Test set
+2.1 Training set
 
-Model CNN dilatih untuk mengenali pola visual unik dari masing-masing nominal.
+2.2 Validation set
 
-Setelah model mendeteksi nominal, sistem dapat menghubungkannya dengan informasi sejarah pahlawan pada uang tersebut.
+2.3 Test set
 
-📊 Performa Model
+3. Model CNN dilatih untuk mengenali pola visual unik dari masing-masing nominal.
+
+4. Setelah model mendeteksi nominal, sistem dapat menghubungkannya dengan informasi sejarah pahlawan pada uang tersebut.
+   
+
+**📊 Performa Model**
 
 Validation Accuracy: ± 64%
 
@@ -58,47 +62,42 @@ Confidence model belum mencapai 90%
 
 Meskipun akurasi validasi belum tinggi, model sudah menunjukkan kemampuan generalisasi yang cukup baik terhadap data uji.
 
-🔧 Teknik yang Digunakan untuk Meningkatkan Performa
-1️⃣ Data Augmentation
 
-Digunakan untuk memperkaya variasi data agar model lebih robust terhadap:
+**🔧 Teknik yang Digunakan untuk Meningkatkan Performa**
+1️. Data Augmentation
 
-Rotasi
+Digunakan untuk memperkaya variasi data agar model lebih robust terhadap kondisi berbagai gambar.
 
-Zoom
-
-Perubahan pencahayaan
-
-Flip
-
-2️⃣ ReduceLROnPlateau
+2️. ReduceLROnPlateau
 
 Menurunkan learning rate secara otomatis ketika performa validasi stagnan, agar model bisa melakukan fine tuning lebih baik.
 
-3️⃣ EarlyStopping
+3️. EarlyStopping
 
 Menghentikan training lebih awal ketika model mulai overfitting.
 
-🚀 Potensi Pengembangan
 
-Beberapa peningkatan yang bisa dilakukan:
+**🚀 Potensi Pengembangan**
 
-Menambah jumlah dataset
+1. Beberapa peningkatan yang bisa dilakukan:
 
-Menggunakan transfer learning (MobileNet, EfficientNet, dll)
+2. Menambah jumlah dataset
 
-Fine-tuning hyperparameter
+3. Menggunakan transfer learning (MobileNet, EfficientNet, dll)
 
-Menambahkan preprocessing seperti background removal
+4. Fine-tuning hyperparameter
 
-Deployment ke aplikasi mobile atau web
+5. Menambahkan preprocessing seperti background removal
 
-💡 Visi Proyek
+6. Deployment ke aplikasi mobile atau web
+   
+
+**💡 Visi Proyek**
 
 Rupiah-Check bukan hanya model klasifikasi, tetapi bagian dari sistem edukasi berbasis AI yang:
 
-Membantu mengenali nominal uang
+1. Membantu mengenali nominal uang
 
-Mengedukasi masyarakat tentang sejarah pahlawan nasional
+2. Mengedukasi masyarakat tentang sejarah pahlawan nasional
 
-Dapat dikembangkan menjadi aplikasi pembelajaran interaktif
+3. Dapat dikembangkan menjadi aplikasi pembelajaran interaktif
