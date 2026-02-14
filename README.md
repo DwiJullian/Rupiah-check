@@ -1,104 +1,91 @@
-**💸 Rupiah-Check**
+# 💸 Rupiah-Check
 
-Rupiah-Check adalah proyek Computer Vision berbasis Convolutional Neural Network (CNN) yang dibuat untuk mendeteksi uang kertas Rupiah dari gambar.
+Rupiah-Check is a Computer Vision project based on a **Convolutional Neural Network (CNN)** designed to detect Indonesian Rupiah banknotes from images.
 
+---
 
-**🎯 Latar Belakang**
+## 🎯 Background
 
-Proyek ini dibuat karena seorang teman ingin mengembangkan software yang dapat:
+This project was created because a friend wanted to develop software that can:
 
-1. 📷 Mendeteksi nominal uang Rupiah dari kamera/gambar.
+1. 📷 Detect the denomination of Indonesian Rupiah from a camera or image input.
+2. 🧑‍🎓 Once the banknote is detected, the system explains the historical background of the national hero featured on the banknote.
 
-2. 🧑‍🎓 Setelah uang terdeteksi, sistem akan menjelaskan sejarah pahlawan nasional yang terdapat pada uang tersebut.
+Therefore, this project is not just an image classification model, but part of an AI-based educational system.
 
-Jadi proyek ini bukan sekadar klasifikasi gambar, tetapi menjadi bagian dari sistem edukatif berbasis AI.
+---
 
-
-**🧠 Teknologi yang Digunakan**
+## 🧠 Technologies Used
 
 1. Deep Learning
-
 2. Convolutional Neural Network (CNN)
-
 3. Data Augmentation
-
 4. Callback Optimization:
 
-   4.1 ReduceLROnPlateau
+   * ReduceLROnPlateau
+   * EarlyStopping
+5. Frameworks:
 
-   4.2 EarlyStopping
+   * Python
+   * TensorFlow / Keras
 
-5. Framework yang digunakan:
+---
 
-   5.1 Python
+## 🏗 How the Model Works
 
-   5.2 TensorFlow / Keras
+1. A dataset of Indonesian Rupiah banknote images was collected and processed.
+2. The data was split into:
 
+   * Training set
+   * Validation set
+   * Test set
+3. The CNN model was trained to recognize unique visual patterns of each denomination.
+4. Once the model detects a denomination, the system links it to historical information about the national hero featured on the banknote.
 
-**🏗 Cara Kerja Model**
+---
 
-1. Dataset gambar uang Rupiah dikumpulkan dan diproses.
+## 📊 Model Performance
 
-2. Data dibagi menjadi:
+* Validation Accuracy: ± 64%
+* Test Prediction: Performs fairly well in recognizing denominations
+* Model confidence has not yet reached 90%
 
-   2.1 Training set
+Although validation accuracy is not very high, the model demonstrates reasonable generalization capability on unseen test data.
 
-   2.2 Validation set
+---
 
-   2.3 Test set
+## 🔧 Techniques Used to Improve Performance
 
-3. Model CNN dilatih untuk mengenali pola visual unik dari masing-masing nominal.
+### 1️⃣ Data Augmentation
 
-4. Setelah model mendeteksi nominal, sistem dapat menghubungkannya dengan informasi sejarah pahlawan pada uang tersebut.
-   
+Used to increase dataset variability and improve model robustness against different image conditions.
 
-**📊 Performa Model**
+### 2️⃣ ReduceLROnPlateau
 
-Validation Accuracy: ± 64%
+Automatically reduces the learning rate when validation performance stagnates, allowing better fine-tuning.
 
-Test Prediction: Cukup baik dalam mengenali nominal
+### 3️⃣ EarlyStopping
 
-Confidence model belum mencapai 90%
+Stops training early when the model starts to overfit.
 
-Meskipun akurasi validasi belum tinggi, model sudah menunjukkan kemampuan generalisasi yang cukup baik terhadap data uji.
+---
 
+## 🚀 Potential Improvements
 
-**🔧 Teknik yang Digunakan untuk Meningkatkan Performa**
+Possible future enhancements include:
 
-1️. Data Augmentation
+1. Increasing dataset size
+2. Using transfer learning (e.g., MobileNet, EfficientNet, etc.)
+3. Hyperparameter fine-tuning
+4. Adding preprocessing techniques such as background removal
+5. Deploying the model to mobile or web applications
 
-Digunakan untuk memperkaya variasi data agar model lebih robust terhadap kondisi berbagai gambar.
+---
 
-2️. ReduceLROnPlateau
+## 💡 Project Vision
 
-Menurunkan learning rate secara otomatis ketika performa validasi stagnan, agar model bisa melakukan fine tuning lebih baik.
+Rupiah-Check is not just a classification model, but part of an AI-powered educational system that:
 
-3️. EarlyStopping
-
-Menghentikan training lebih awal ketika model mulai overfitting.
-
-
-**🚀 Potensi Pengembangan**
-
-1. Beberapa peningkatan yang bisa dilakukan:
-
-2. Menambah jumlah dataset
-
-3. Menggunakan transfer learning (MobileNet, EfficientNet, dll)
-
-4. Fine-tuning hyperparameter
-
-5. Menambahkan preprocessing seperti background removal
-
-6. Deployment ke aplikasi mobile atau web
-   
-
-**💡 Visi Proyek**
-
-Rupiah-Check bukan hanya model klasifikasi, tetapi bagian dari sistem edukasi berbasis AI yang:
-
-1. Membantu mengenali nominal uang
-
-2. Mengedukasi masyarakat tentang sejarah pahlawan nasional
-
-3. Dapat dikembangkan menjadi aplikasi pembelajaran interaktif
+1. Helps identify currency denominations
+2. Educates users about Indonesian national heroes
+3. Can be developed into an interactive learning application
