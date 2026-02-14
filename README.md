@@ -9,7 +9,7 @@ Proyek ini dibuat karena seorang teman ingin mengembangkan software yang dapat:
 
 1. 📷 Mendeteksi nominal uang Rupiah dari kamera/gambar.
 
-2.🧑‍🎓 Setelah uang terdeteksi, sistem akan menjelaskan sejarah pahlawan nasional yang terdapat pada uang tersebut.
+2. 🧑‍🎓 Setelah uang terdeteksi, sistem akan menjelaskan sejarah pahlawan nasional yang terdapat pada uang tersebut.
 
 Jadi proyek ini bukan sekadar klasifikasi gambar, tetapi menjadi bagian dari sistem edukatif berbasis AI.
 
@@ -24,15 +24,15 @@ Jadi proyek ini bukan sekadar klasifikasi gambar, tetapi menjadi bagian dari sis
 
 4. Callback Optimization:
 
-4.1 ReduceLROnPlateau
+   4.1 ReduceLROnPlateau
 
-4.2 EarlyStopping
+   4.2 EarlyStopping
 
 5. Framework yang digunakan:
 
-5.1 Python
+   5.1 Python
 
-5.2 TensorFlow / Keras
+   5.2 TensorFlow / Keras
 
 
 **🏗 Cara Kerja Model**
@@ -41,11 +41,11 @@ Jadi proyek ini bukan sekadar klasifikasi gambar, tetapi menjadi bagian dari sis
 
 2. Data dibagi menjadi:
 
-2.1 Training set
+   2.1 Training set
 
-2.2 Validation set
+   2.2 Validation set
 
-2.3 Test set
+   2.3 Test set
 
 3. Model CNN dilatih untuk mengenali pola visual unik dari masing-masing nominal.
 
