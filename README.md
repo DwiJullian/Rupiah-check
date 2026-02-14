@@ -64,6 +64,7 @@ Meskipun akurasi validasi belum tinggi, model sudah menunjukkan kemampuan genera
 
 
 **🔧 Teknik yang Digunakan untuk Meningkatkan Performa**
+
 1️. Data Augmentation
 
 Digunakan untuk memperkaya variasi data agar model lebih robust terhadap kondisi berbagai gambar.
